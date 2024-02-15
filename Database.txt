@@ -1,0 +1,38 @@
+STEP 1 : Open XAMPP and start apache and mysql
+STEP 2 : Open Mysql and select a connection with port 3306
+STEP 3:  Follow these commands below 
+
+
+
+create database eves_express;
+
+use eves_express;
+
+create table admin (
+	id INT primary key auto_increment,
+    username VARCHAR(255) not null,
+    password VARCHAR(255) not null,
+    firstName VARCHAR(255) not null,
+    lastName VARCHAR(255) not null,
+    email VARCHAR(255) not null,
+    age int,
+    position VARCHAR(255) not null
+ );
+ 
+
+select * from admin;
+
+select * from products;
+
+
+CREATE TABLE products (
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(255) NOT NULL,
+    quantity INT not null,
+    price_php_perPiece INT not null,
+    unit VARCHAR(50),
+    category VARCHAR(255) NOT NULL
+);
+
+
+
